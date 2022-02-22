@@ -1,0 +1,20 @@
+name: Test
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  call:
+    name: Call
+    uses: mrysavy/test1/.github/workflows/test.yml@master
+
+  render:
+    name: Test
+    runs-on: ubuntu
+
+    steps:
+      - name: Test
+        run: |
+          echo ${{ secrets.SECRET1 }}
+          echo ${{ secrets.SECRET2 }}
