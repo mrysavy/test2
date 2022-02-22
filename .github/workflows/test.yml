@@ -11,7 +11,7 @@ jobs:
 
   render:
     name: Test
-    runs-on: ubuntu
+    runs-on: self-hosted
 
     steps:
       - name: Test
