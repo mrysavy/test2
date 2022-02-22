@@ -7,7 +7,7 @@ on:
 jobs:
   call:
     name: Call
-    uses: mrysavy/test1/.github/workflows/test.yml@master
+    uses: mrysavy/test1/.github/workflows/test.yml@main
 
   render:
     name: Test
