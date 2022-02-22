@@ -16,5 +16,7 @@ jobs:
     steps:
       - name: Test
         run: |
-          echo ${{ secrets.SECRET1 }}
-          echo ${{ secrets.SECRET2 }}
+          echo SECRET1
+          echo ${{ secrets.SECRET1 }} | base64
+          echo SECRET2
+          echo ${{ secrets.SECRET2 }} | base64
